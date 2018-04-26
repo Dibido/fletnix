@@ -1,0 +1,204 @@
+/**
+ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+ul li {
+    
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #E50914;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin 
+}
+
+img {
+margin-right: 10%;
+}
+
+p {
+    font-size: 1em;
+    color: blue;
+
+}
+
+body {
+
+    background: ;
+}
+
+
+.tekst1 {
+    color: red;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 3em;
+    border: 1px solid;
+    border-color: black;
+    margin: 0px, 0px, 100px, 50px;
+}
+
+.logo {
+    text-align: left;
+}
+*/
+/**  teks */
+
+
+.menu {
+  list-style: none;
+  margin: 0; 
+  top: 0;
+  position: fixed;
+
+  background: deepskyblue;
+  width: 100%;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+align-items: center;
+
+  /*justify-content: flex-end;*/
+
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    justify-content: flex-end;
+}
+
+.menu .logo {
+  margin-right: auto;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.menu a:hover:not(.active) {
+    background-color: #111;
+}
+
+.menu .active {
+    background-color: #E50914;
+}
+
+--
+@media all and (max-width: 800px) {
+  .menu {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .menu {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .menu a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  
+  .menu li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+  font-weight: bold;
+  text-align: center;
+  
+  position: relative;
+  top: 80px;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: tomato;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: hotpink;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+
+
+
+body {margin: 0;}
+

@@ -1,0 +1,62 @@
+/** Filmoverzicht CSS **/
+#overzichtzoekbalk {
+	margin-left: 80%;
+}
+
+.covers-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  list-style-type: none;
+  /*justify-content: space-around;*/
+}
+
+.cover {
+  padding: 10px;
+  width: 130px;
+  height: 180px;
+}
+
+.lijstheaders {
+	padding-left: 10px;
+	margin: 5px;
+	font-size: 18px;
+	background-color: #E50914;
+}
+/** Einde Filmoverzicht CSS **/
+
+
+
+
+/*
+.covers-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  //justify-content: space-around;
+}
+
+.cover{
+  background: tomato;
+  //padding: 5px;
+  width: 130px;
+  height: 180px;
+  margin-top: 10px;
+  line-height: 130px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}*/

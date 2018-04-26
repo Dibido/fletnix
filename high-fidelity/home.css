@@ -1,0 +1,170 @@
+#nav {
+    list-style:none inside;
+    /*margin:0;
+    padding:0;*/
+    /*text-align:center;*/
+    }
+
+#nav li {
+    display:block;
+    position:relative;
+    float:left;
+    background: #292c2f; /* menu background color */
+    }
+
+#nav li a {
+    display:block;
+    padding:0;
+    text-decoration:none;
+    width: 100px; /*this is the width of the menu items*/
+    line-height:45px; /*this is the height of the menu items*/
+    color:#ffffff; /*list item font color*/
+    }
+        
+#nav li li a {font-size:80%;} /* smaller font size for sub menu items */
+    
+/*#nav li:hover {background:#003f20;} /* highlights current hovered list item and the parent list items when hovering over sub menues */
+
+
+
+/*--- Sublist Styles ---*/
+#nav ul {
+    position:absolute;
+    padding:0;
+    left:0;
+	width: 95px;
+    display:none; /* hides sublists */
+    }
+
+#nav li:hover ul {display:block;} /* shows sublist on hover */
+/* Menu css-------------------------------------------*/
+/*.menu {
+	list-style: none;
+	margin: 0; 
+	position: fixed;
+	background: deepskyblue;
+	width: 100%;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	justify-content: flex-end;
+}
+
+.menu #logo {
+	margin-right: auto;
+}
+
+.menu a {
+ 	display: block;
+ 	color: white;
+	font-weight: bold;	
+	text-align: center;
+	padding: 14px 16px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.navigatie {
+	display: -webkit-flex;
+	height: auto;
+}
+
+.menu a:hover:not(.active) {
+    background-color: #111;
+}
+
+.menu .active {
+   	background-color: #E50914;
+}*/
+/*einde menu css ----------------------------------------*/
+/* spotje css -------------------------------------------*/
+/*.flexcontainer{
+	display: flex;
+	background-image: url(img/homebg.jpg);
+	width: 100%;
+}
+
+.spotje {
+	margin-left: 10px;
+	margin-bottom: 290px;
+	width: 50%;
+	color: white;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+#catchphrase {
+	color: white;
+	margin-left: 40px;
+}
+
+.button {
+	margin-left: 40px;
+    	display: inline-block;
+    	cursor: pointer;
+    	font-family: Arial,sans-serif;
+    	color: #fff;
+    	background-color: #e50914;
+    	border-radius: 2px;
+    	border: 0;
+	padding: 18px 20px;
+	min-height: 32px;
+	width: auto;
+	font-size: 15px;
+}*/
+/* einde spotje css --------------------------------------*/
+/* footer css --------------------------------------------*/
+/*
+#footerlist {
+	display: -webkit-flex;
+	background-color: darkgrey;
+}
+
+#footerlist li {
+	display: inline;
+}
+
+#footerlist p {
+	text-align: left;
+	font-weight: bold;
+}
+
+#telefoon {
+	width: 80%;
+}
+
+#footerlist a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	position: relative;
+	top: 15px;
+	margin-left: 5px;
+	width: 20%;
+}
+
+.menu a:hover:not(.active) {
+    	background-color: #111;
+}
+
+.menu .active {
+   	background-color: #E50914;
+}
+
+.titel {
+	margin-top: 0px;
+	color: #E50914;
+	background-color: #031a30;
+}
+
+.flexcontainer {
+	display: -webkit-flex;
+	width: 100%;
+	padding-top:100px; //kan afhankelijk zijn van het menu?
+	margin: 0;
+}*/
+/* einde footer css --------------------------------------*/

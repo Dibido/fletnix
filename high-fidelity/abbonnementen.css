@@ -1,0 +1,31 @@
+/** Abbonnementen css **/
+#abbonnementheader{
+	padding-left: 30%;
+}
+
+#abbonnementtekst{
+	padding-left: 40%;
+}
+
+.abbonnementtabel{
+border-collapse:collapse;
+border:1px solid grey;
+}
+
+.abbonnementtabel td{
+border:1px solid grey;
+}
+
+.abbonnementtabel {
+	margin-left: 35%;
+}
+
+#abbonnementkeuze {
+	margin-left: 45%;
+}
+
+#registreerknop {
+	margin-left: 45%;
+}
+
+/** Einde Abbonnementen css **/

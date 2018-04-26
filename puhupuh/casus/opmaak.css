@@ -1,0 +1,397 @@
+/*Stylesheet voor de website FletNix
+ Gemaakt door Dibran Dokter en Ibrahim Durmus
+ VAK = WebTech
+ Klas = I1D
+ Docent = Rein Harle
+ Datum = 11/12/2016 
+php versie IB 
+ */
+
+
+/** Volledige breedte default voor hele pagina **/
+header, body {
+        margin: 0px;
+        padding: 0px;
+        background-color: #141414;
+        color: white;
+    }
+ 
+/** content positie hoogte en breedte aangepast op default**/
+.content {
+    margin: 325px 10px 0px 10px;
+}
+ 
+/* MENU CSS-------------------------------------------*/
+#menu {
+    background-color: #292c2f;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+ 
+#menulist ul{
+    list-style-type: none;
+    padding: 0;
+    margin-right: 0px;
+}
+ 
+/** over de menu items zelf */
+#menulist a {
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 14px 16px;
+	margin: 0px 10px auto 10px;
+}
+ 
+#menulist li a:hover{
+  background-color: #555;
+}
+ 
+#menulist li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ 
+#menulist .active {
+    background-color: #E50914;
+}
+/**Instellingen voor het sub-menu**/
+#nav {
+    list-style:none inside;
+    }
+
+#nav li {
+    display:block;
+    position:relative;
+    float:left;
+    background: #292c2f; /* menu background color */
+    }
+
+#nav li a {
+    display:block;
+    padding:0;
+    text-decoration:none;
+    width: 100px; /*this is the width of the menu items*/
+    line-height:45px; /*this is the height of the menu items*/
+    color:#ffffff; /*list item font color*/
+    }
+
+#nav li li a {font-size:80%;} /* smaller font size for sub menu items */
+
+#nav ul {
+    position:absolute;
+    padding:0;
+    left:0;
+	width: 95px;
+    display:none; /* hides sublists */
+    }
+
+#nav li:hover ul {display:block;}
+/** MOBIEL WEERGAVEN*/
+@media screen and (min-width: 468px){
+
+/** items breedte schalen **/
+#menulist li{
+    /** schalen **/
+  flex: 1 1 0;
+}
+ 
+#menulist {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+    /** content positie hoogte en breedte voor Mobiel **/
+.content {
+   margin: 100px 35px 0px 35px;
+}
+ 
+
+}
+ 
+/*EINDE MOBIEL CSS ----------------------------------------*/
+/* spotje css -------------------------------------------*/
+.bgflexcontainer{
+    display: flex;
+    background-image: url(img/homebg.jpg);
+    width: 100%;
+}
+ 
+.bgflexcontainer {
+    margin: 80px 0px 0px 0px;
+    padding: 0;
+ 
+}
+ 
+.spotje {
+    margin: 90px 0px 190px 10px;
+    width: 50%;
+    color: white;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+ 
+.catchphrase {
+    color: white;
+    margin-left: 40px;
+}
+ 
+.button {
+    margin-top: 40px;
+    margin-left: 40px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    background-color: #e50914;
+    border-radius: 2px;
+    border: 0;
+    padding: 18px 20px;
+    min-height: 32px;
+    width: auto;
+    font-size: 15px;
+}
+/* einde spotje css --------------------------------------*/
+/* footer css --------------------------------------------*/
+ 
+
+.geenbolletjes ul {
+list-style-type: none;
+}
+
+/* contact css --------------------------------------------*/
+.contact-flex {
+    display: -webkit-flex;
+    width: 100%;
+    margin: 0;
+}
+
+.contactheader{
+    width:50%;
+    margin:0;   
+} 
+/* EIND contact css --------------------------------------------*/
+/* BEGIN inlog css --------------------------------------------*/
+.inlogform{
+    padding-left: 45%;
+    display:flex;
+}
+
+#email {
+    margin-bottom: 10px;
+}
+
+#password{
+    margin-bottom: 10px;
+}
+
+#login p {
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+}
+/* EIND inlog css --------------------------------------------*/
+/** Abbonnementen css **/
+#abbonnementheader{
+    padding-left: 30%;
+}
+
+#abbonnementtekst{
+    padding-left: 40%;
+}
+
+.abbonnementtabel{
+border-collapse:collapse;
+border:1px solid grey;
+}
+
+.abbonnementtabel td{
+border:1px solid grey;
+}
+
+.abbonnementtabel {
+    margin-left: 35%;
+}
+
+#abbonnementkeuze {
+    margin-left: 45%;
+}
+
+#registreerknop {
+    margin-left: 45%;
+}
+
+/** Einde Abbonnementen css **/
+/** Registereren CSS **/
+#registerform{
+    padding-left: 45%;
+    display:flex;
+}
+#registerform input{
+    margin-bottom: 10px;
+}
+/** Einde Registereren CSS **/
+/** Filmoverzicht CSS **/
+#overzichtzoekbalk {
+    margin-left: 80%;
+}
+
+.covers-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  list-style-type: none;
+  /*justify-content: space-around;*/
+}
+
+.cover {
+  padding: 10px;
+  padding-bottom: 80px;
+  width: 130px;
+  height: 180px;
+}
+
+.lijstheaders {
+    padding-left: 10px;
+    margin: 5px;
+    font-size: 18px;
+    background-color: #E50914;
+}
+/** Einde Filmoverzicht CSS **/
+/** Account CSS **/
+#accountheader {
+  padding-left: 20px;
+}
+
+.options-container {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+}
+/** Einde Account CSS **/
+/** Afspelen CSS **/
+.movie-flex {
+    display: flex;
+}
+
+.movieinformation-flex {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.movie-flex h3 {
+    margin: 30px 0px 0px 10px;
+}
+
+#trailer {
+    margin: 30px 0px 0px 0px;
+}
+/** Einde Afspelen CSS**/
+
+/* FOOTER css --------------------------------------------*/
+.footer{
+    background-color: #292c2f;
+    box-sizing: border-box;
+    width: 100%;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+    margin-top: 80px;
+}
+
+.footer-links a{
+color: #8f9296;
+}
+
+.footer .footer-links p{
+    color:  #8f9296;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Footer links */
+
+.footer p.footer-lijst{
+    font-size:18px;
+    font-weight: bold;
+    color:  #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.footer p.footer-lijst a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer .footer-rechts{
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+}
+
+.footer .footer-rechts a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color:  #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-left: 3px;
+}
+
+/* FOOTER voor mobiel weergaven*/
+
+@media (max-width: 468px) {
+
+    .footer .footer-links,
+    .footer .footer-rechts{
+        text-align: center;
+    }
+
+    .footer .footer-rechts{
+        float: none;
+        margin: 0 auto 20px;
+    }
+
+    .footer .footer-links p.footer-lijst{
+        line-height: 1.8;
+    }
+}
+
+/* geavanceerd zoeken*/
+
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox]:checked ~ #geavanceerd_div{
+    display: block;
+}
+#geavanceerd_div{
+    display: none;
+}
+
+.btnzoek{
+    text-decoration: underline;
+}
+/* einde footer css --------------------------------------*/

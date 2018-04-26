@@ -1,0 +1,173 @@
+/* Homepagina high-fidelity stylesheet */
+/* HTML BASIC STYLE-------------------------------------------*/
+ 
+/** Volledige breedte defeult voor hele pagina **/
+header, body {
+        margin: 0px;
+        padding: 0px;
+    }
+ 
+/** content positie hoogte en breedte aangepast op default**/
+.content {
+    margin: 325px 10px 0px 10px;
+}
+ 
+/* MENU CSS-------------------------------------------*/
+#menu {
+    //border: 2px solid red;
+    background-color: #333;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+ 
+#menulist ul{
+    list-style-type: none;
+    padding: 0;
+    margin-right: 0px;
+ 
+}
+ 
+/** over de menu items zelf */
+#menulist a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 14px 16px;
+}
+ 
+#menulist li a:hover{
+  background-color: #555;
+}
+ 
+#menulist a:hover:not(.active) {
+    background-color: #111;
+}
+ 
+#menulist .active {
+    background-color: #E50914;
+}
+ 
+/** MOBIEL WEERGAVEN*/
+@media screen and (min-width: 468px){
+ 
+/** mobiel weergaven menu */
+#menulist ul{
+  display: flex;
+  /** recht links **/
+  //justify-content: flex-end;
+  margin-right: 10px;
+}
+ 
+/** items breedte schalen **/
+#menulist li{
+    /** schalen **/
+  flex: 1 1 0;
+}
+ 
+#menulist {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+    /** content positie hoogte en breedte voor Mobiel **/
+.content {
+    margin: 100px 10px 0px 10px;
+}
+ 
+.spotje {
+margin-top: 100px;
+}
+ 
+}
+ 
+/*EINDE MOBIEL CSS ----------------------------------------*/
+/* spotje css -------------------------------------------*/
+.bgflexcontainer{
+    display: flex;
+    background-image: url(img/homebg.jpg);
+    width: 100%;
+}
+ 
+.content, .bgflexcontainer {
+    margin: 80px 0px 0px 0px;
+    padding: 0;
+ 
+}
+ 
+.spotje {
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 290px;
+    width: 50%;
+    color: white;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+ 
+.catchphrase {
+    color: white;
+    margin-left: 40px;
+}
+ 
+.button {
+    margin-left: 40px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    background-color: #e50914;
+    border-radius: 2px;
+    border: 0;
+    padding: 18px 20px;
+    min-height: 32px;
+    width: auto;
+    font-size: 15px;
+}
+/* einde spotje css --------------------------------------*/
+/* footer css --------------------------------------------*/
+ 
+.footer {
+  position: absolute;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+ 
+ 
+/*
+#footerlist {
+    display: -webkit-flex;
+    background-color: darkgrey;
+}
+ 
+#footerlist li {
+    display: inline;
+}
+ 
+#footerlist p {
+    text-align: left;
+    font-weight: bold;
+}
+ 
+#telefoon {
+    width: 70%;
+}
+ 
+#footerlist a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    position: relative;
+ 
+}
+ 
+.flexcontainer {
+    display: -webkit-flex;
+    width: 100%;
+    padding-top:px; /*kan afhankelijk zijn van het menu?*/
+    margin: 0;
+}
+ 
+*/
+/* einde footer css --------------------------------------*/

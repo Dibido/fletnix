@@ -1,0 +1,104 @@
+/* Loginpagina high-fidelity stylesheet */
+/* Menu css-------------------------------------------*/
+/*.menu {
+	list-style: none;
+	margin: 0; 
+	position: fixed;
+	background: deepskyblue;
+	width: 100%;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	justify-content: flex-end;
+}
+
+.menu #logo {
+	margin-right: auto;
+}
+
+.menu a {
+ 	display: block;
+ 	color: white;
+	font-weight: bold;	
+	text-align: center;
+	padding: 14px 16px;
+    	margin-right: 10px;
+    	text-decoration: none;
+}
+
+.navigatie {
+	display: -webkit-flex;
+	height: auto;
+}
+
+.menu a:hover:not(.active) {
+    	background-color: #111;
+}
+
+.menu .active {
+   	background-color: #E50914;
+}
+*/
+/*einde menu css ----------------------------------------*/
+/*login css --------------------------------------------*/
+.inlogform{
+	padding-left: 45%;
+	display:flex;
+}
+
+#email {
+	margin-bottom: 10px;
+}
+
+#password{
+	margin-bottom: 10px;
+}
+
+#login p {
+	padding: 10px 0px 0px 0px;
+	margin: 0px;
+}
+/*einde login css --------------------------------------*/
+/* footer css --------------------------------------------*/
+/*
+#footer{
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+}
+
+#footerlist {
+	display: -webkit-flex;
+	background-color: darkgrey;
+}
+
+#footerlist li {
+	display: inline;
+}
+
+#footerlist p {
+	text-align: left;
+	font-weight: bold;
+}
+
+#telefoon {
+	width: 80%;
+}
+
+#footerlist a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	position: relative;
+	top: 15px;
+	margin-left: 5px;
+	width: 20%;
+}
+*/
+/* einde footer css --------------------------------------*/
